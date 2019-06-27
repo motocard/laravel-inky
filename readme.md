@@ -1,23 +1,22 @@
-[![Build Status](https://img.shields.io/travis/petecoop/laravel-inky.svg)](https://travis-ci.org/petecoop/laravel-inky)
-
 Allows you to use Foundation's [Inky](http://foundation.zurb.com/emails/docs/inky.html) email templates nicely in Laravel 5.
 
 Any views with a `.inky.php` extension will be compiled with both Inky and Blade, allowing you to use both templating engines seamlessly together. CSS is automatically inlined so styles work in email clients that don't support external stylesheets.
 
-## Installation
+# Installation
 
 Require with composer
 ```
-composer require petecoop/laravel-inky
+composer require mendicm/laravel-inky:0.3.0
 ```
 
+## Laravel versions below 5.5:
 Once installed, you'll need to register the service provider. Open `config/app.php` and add to the `providers` key:
 
 ```
 Petecoop\LaravelInky\InkyServiceProvider::class
 ```
 
-## Usage
+# Usage
 
 Check the [Foundation for Emails docs](http://foundation.zurb.com/emails/docs/index.html) for full usage on how to use Inky and Foundation for Emails CSS.
 
@@ -78,6 +77,6 @@ then
 The location of your `<link rel="stylesheet">` `href` is resolved to the `resources/assets/css` directory, so in the example above it expects some CSS at `resources/assets/css/foundation-emails.css`.
 
 
-## Licence
+# Licence
 
 [MIT Licence](LICENCE)
