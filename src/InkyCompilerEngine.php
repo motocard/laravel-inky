@@ -26,7 +26,7 @@ class InkyCompilerEngine extends CompilerEngine
         $stylesheets = collect($crawler->filter('link[rel=stylesheet]')->extract('href'));
         $files = $this->files;
         $styles = $stylesheets->map(function ($stylesheet) use ($files) {
-            $path = resource_path('assets/css/' . $stylesheet);
+            $path = public_path('css/' . $stylesheet); // This is where the CSS file path is changed to point to public/css/
             return $files->get($path);
         })->implode("\n\n");
 

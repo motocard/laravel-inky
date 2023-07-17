@@ -6,7 +6,7 @@ Any views with a `.inky.php` extension will be compiled with both Inky and Blade
 
 Require with composer
 ```
-composer require mendicm/laravel-inky:0.3.0
+composer require motocard/laravel-inky:0.3.0
 ```
 
 ## Laravel versions below 5.5:
